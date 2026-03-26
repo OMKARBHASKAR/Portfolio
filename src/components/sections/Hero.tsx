@@ -23,10 +23,10 @@ export default function Hero() {
 
   // Each line fills the full viewport width: font-size ≈ 100vw / (charCount * ~0.6)
   // Updated lines to be 2 massive lines with segments
-  // Updated lines for maximum impact and better balance
+  // Updated lines for maximum impact and better balance - reduced to fit screen
   const lines = [
     {
-      size: "5.2vw",
+      size: "3.8vw",
       tracking: "tracking-tight md:tracking-normal",
       segments: [
         { text: "GOOD DATA ANALYTICS WITH AI", color: "text-white/90" },
@@ -34,7 +34,7 @@ export default function Hero() {
       ]
     },
     {
-      size: "6.2vw",
+      size: "4.2vw",
       tracking: "tracking-tighter",
       segments: [
         { text: "GREAT ANALYTICS WITH AI", color: "text-white/90" },
@@ -121,7 +121,7 @@ export default function Hero() {
         {/* Revealed on scroll down */}
         <motion.div
           style={{ opacity: fadeOnScroll, y: yOnScroll }}
-          className="mb-8 text-lg sm:text-xl md:text-2xl italic text-white/70 font-serif tracking-widest whitespace-nowrap"
+          className="mb-10 text-[10px] sm:text-[11px] font-black uppercase text-white/50 tracking-[0.5em] whitespace-nowrap"
         >
           And that&apos;s where I come in.
         </motion.div>
