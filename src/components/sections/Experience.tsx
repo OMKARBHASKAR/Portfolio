@@ -71,8 +71,9 @@ export default function Experience() {
           </div>
 
           <p className="text-neutral-400 text-base leading-relaxed mb-8 max-w-2xl bg-white/[0.02] p-6 rounded-3xl border border-white/5">
-            Architecting automated reporting ecosystems reducing latency by 60%. Leveraging deep user behavior analysis for cross-platform product optimization. 
-            Engineered a <span className="text-blue-400 font-bold">Predictive Churn Model</span> that identified at-risk users with 85% accuracy.
+            Architecting automated <span className="text-blue-400 font-bold">data integrity pipelines</span> using Python and SQL, remediating critical data quality bottlenecks to ensure high-fidelity analytics across cross-functional business units. 
+            Leveraging advanced EDA to surface actionable trends and anomalies, directly informing enterprise-level reporting strategies. 
+            Engineered dynamic Power BI ecosystems featuring real-time KPI orchestration, effectively replacing legacy manual reporting with an <span className="text-cyan-400 font-bold">automated executive intelligence hub</span>.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
