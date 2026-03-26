@@ -15,7 +15,7 @@ export default function Experience() {
              <div className="p-2 rounded-lg bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">
                 <TrendingUp size={18} />
              </div>
-             <h4 className="text-2xl font-black text-white tracking-tight">Freelance Data Analyst</h4>
+             <h4 className="text-2xl font-black text-white tracking-tight">Freelance Data Analytics With AI Expert</h4>
           </div>
 
           <div className="flex items-center gap-4 text-neutral-400 font-bold text-xs uppercase tracking-widest mb-6">
@@ -62,7 +62,7 @@ export default function Experience() {
              <div className="p-2 rounded-lg bg-blue-500/10 text-blue-400 border border-blue-500/20">
                 <Briefcase size={18} />
              </div>
-             <h4 className="text-2xl font-black text-white tracking-tight">Data Analyst Intern</h4>
+             <h4 className="text-2xl font-black text-white tracking-tight">Data Analytics With AI Intern</h4>
           </div>
           
           <div className="flex items-center gap-4 text-neutral-400 font-bold text-xs uppercase tracking-widest mb-6">

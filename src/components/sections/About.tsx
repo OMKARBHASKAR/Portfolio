@@ -60,8 +60,8 @@ export default function About() {
 
               <div className="space-y-8 text-xl md:text-2xl text-neutral-400 font-medium leading-relaxed max-w-3xl">
                 <p>
-                  I'm <span className="text-white font-black">Omkar Pawar</span>, a Data Analyst based in India. 
-                  I build <span className="text-blue-400 underline decoration-blue-500/30 decoration-4 underline-offset-8">production-ready data strategies</span> that real businesses rely on every day.
+                  I'm <span className="text-white font-black">Omkar Pawar</span>, a <span className="text-blue-400 font-bold">Data Analytics With AI</span> expert based in India. 
+                  I build <span className="text-blue-400 underline decoration-blue-500/30 decoration-4 underline-offset-8">high-velocity data ecosystems</span> that real businesses rely on every day.
                 </p>
                 <p>
                   I have analyzed and transformed complex datasets — successfully driving <span className="text-white font-black">actionable business intelligence</span> for advanced decision-making. 
@@ -128,7 +128,7 @@ export default function About() {
                 <div className="absolute inset-0 rounded-full overflow-hidden border-2 border-neutral-800 bg-[#0A0A0A] z-10 shadow-[0_0_80px_rgba(0,0,0,0.6)] group/avatar">
                   <Image 
                     src="/omkar.png" 
-                    alt="Omkar Pawar - Data Analyst" 
+                    alt="Omkar Pawar - Data Analytics With AI" 
                     fill 
                     sizes="(max-width: 768px) 100vw, 500px"
                     priority

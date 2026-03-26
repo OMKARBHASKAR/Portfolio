@@ -29,7 +29,7 @@ export default function Hero() {
       size: "5.2vw",
       tracking: "tracking-tight md:tracking-normal",
       segments: [
-        { text: "GOOD DATA ANALYSTS", color: "text-white/90" },
+        { text: "GOOD DATA ANALYTICS WITH AI", color: "text-white/90" },
         { text: "MOVE TO INSIGHTS", gradient: "from-[#60A5FA] via-[#93C5FD] to-[#60A5FA]/60" }
       ]
     },
@@ -37,7 +37,7 @@ export default function Hero() {
       size: "6.2vw",
       tracking: "tracking-tighter",
       segments: [
-        { text: "GREAT ANALYSTS", color: "text-white/90" },
+        { text: "GREAT ANALYTICS WITH AI", color: "text-white/90" },
         { text: "CONNECT IT TO DECISIONS", gradient: "from-[#A78BFA] via-[#C4B5FD] to-[#A78BFA]/60" }
       ]
     }

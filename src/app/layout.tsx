@@ -21,8 +21,8 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Omkar Pawar | Cinematic Data Analyst Portfolio",
-  description: "A premium interactive data analyst portfolio showcasing business intelligence and data storytelling.",
+  title: "Omkar Pawar | Data Analytics With AI Portfolio",
+  description: "A premium interactive data analytics with AI portfolio showcasing business intelligence and data storytelling.",
 };
 
 export default function RootLayout({
