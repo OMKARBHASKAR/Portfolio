@@ -8,10 +8,10 @@ const GalaxyPlanets = dynamic(() => import('@/components/GalaxyPlanets'), { ssr:
 
 const certs = [
   {
-    title: "PL-300: Power BI Analyst",
-    issuer: "Microsoft Certified",
-    date: "2025",
-    id: "VERIFIED_0x83F"
+    title: "Microsoft Excel Expert",
+    issuer: "Simplilearn",
+    date: "DEC 2025",
+    id: "VERIFIED_0xSLN"
   },
   {
     title: "Excel Expert (MOS)",
@@ -22,7 +22,7 @@ const certs = [
   {
     title: "Advanced SQL Certification",
     issuer: "HackerRank Professional",
-    date: "2025",
+    date: "MARCH 2026",
     id: "VERIFIED_0x44D"
   }
 ];
