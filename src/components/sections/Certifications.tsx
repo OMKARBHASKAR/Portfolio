@@ -14,10 +14,10 @@ const certs = [
     id: "VERIFIED_0xSLN"
   },
   {
-    title: "Excel Expert (MOS)",
-    issuer: "Microsoft Specialist",
+    title: "Advanced Data Analyst With AI",
+    issuer: "Haris & Co",
     date: "2025",
-    id: "VERIFIED_0x21B"
+    id: "VERIFIED_0xHAI"
   },
   {
     title: "Advanced SQL Certification",
