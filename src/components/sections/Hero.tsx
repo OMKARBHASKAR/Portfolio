@@ -26,19 +26,19 @@ export default function Hero() {
   // Updated lines for maximum impact and better balance - reduced to fit screen
   const lines = [
     {
-      size: "3.8vw",
+      size: "4.2vw",
       tracking: "tracking-tight md:tracking-normal",
       segments: [
-        { text: "GOOD DATA ANALYTICS WITH AI", color: "text-white/90" },
-        { text: "MOVE TO INSIGHTS", gradient: "from-[#60A5FA] via-[#93C5FD] to-[#60A5FA]/60" }
+        { text: "GOOD ANALYST", color: "text-white/90" },
+        { text: "MOVES TO INSIGHTS", gradient: "from-[#60A5FA] via-[#93C5FD] to-[#60A5FA]/60" }
       ]
     },
     {
-      size: "4.2vw",
+      size: "4.6vw",
       tracking: "tracking-tighter",
       segments: [
-        { text: "GREAT ANALYTICS WITH AI", color: "text-white/90" },
-        { text: "CONNECT IT TO DECISIONS", gradient: "from-[#A78BFA] via-[#C4B5FD] to-[#A78BFA]/60" }
+        { text: "GREAT ANALYST", color: "text-white/90" },
+        { text: "CONNECTS IT TO DECISION", gradient: "from-[#A78BFA] via-[#C4B5FD] to-[#A78BFA]/60" }
       ]
     }
   ];
@@ -117,11 +117,11 @@ export default function Hero() {
       </motion.div>
 
       {/* ── Scroll Area Content ─────────────────────────────────── */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center">
+      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center">
         {/* Revealed on scroll down */}
         <motion.div
           style={{ opacity: fadeOnScroll, y: yOnScroll }}
-          className="mb-10 text-[10px] sm:text-[11px] font-black uppercase text-white/50 tracking-[0.5em] whitespace-nowrap"
+          className="mb-6 text-[13px] sm:text-[15px] font-black uppercase text-white/60 tracking-[0.5em] whitespace-nowrap"
         >
           And that&apos;s where I come in.
         </motion.div>

@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Award, ShieldCheck, Cpu } from 'lucide-react';
+import { Award, ShieldCheck } from 'lucide-react';
 import dynamic from 'next/dynamic';
 
 const GalaxyPlanets = dynamic(() => import('@/components/GalaxyPlanets'), { ssr: false });
@@ -14,7 +14,7 @@ const certs = [
     id: "VERIFIED_0xSLN"
   },
   {
-    title: "Advanced Data Analyst With AI",
+    title: "Advanced Data Analytics with AI",
     issuer: "Haris & Co",
     date: "2025",
     id: "VERIFIED_0xHAI"
@@ -74,9 +74,6 @@ export default function Certifications() {
                   <div className="p-3 rounded-2xl bg-[#f84824]/5 border border-[#f84824]/10 text-[#f84824]">
                     <Award size={24} />
                   </div>
-                  <div className="text-[10px] font-mono text-[#f84824]/50 group-hover:text-[#f84824] transition-colors">
-                    {cert.id}
-                  </div>
                 </div>
 
                 <h3 className="font-black text-xl mb-2 tracking-tight line-height-tight">
@@ -86,11 +83,7 @@ export default function Certifications() {
                   {cert.issuer}
                 </p>
 
-                <div className="flex items-center justify-between pt-6 border-t border-white/5">
-                  <div className="flex items-center gap-2 text-[10px] font-mono text-neutral-600">
-                    <Cpu size={12} />
-                    ISSUE_DATE
-                  </div>
+                <div className="flex items-center justify-end pt-6 border-t border-white/5">
                   <span className="text-xs font-black text-white px-3 py-1 bg-white/[0.03] rounded-md tracking-widest border border-white/5 uppercase">
                     {cert.date}
                   </span>
