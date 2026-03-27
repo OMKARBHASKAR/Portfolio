@@ -71,7 +71,7 @@ export default function About() {
 
               <div className="mt-12 flex flex-wrap gap-4">
                 {skills.map((skill) => (
-                  <div key={skill} className="px-6 py-3 rounded-full border border-neutral-800 bg-neutral-900/40 text-neutral-300 text-sm font-bold tracking-widest hover:border-[#60A5FA] hover:text-[#60A5FA] hover:scale-105 hover:bg-[#60A5FA]/10 transition-all cursor-default">
+                  <div key={skill} className="px-6 py-3 rounded-full border border-neutral-800 bg-neutral-900/40 text-neutral-300 text-sm font-bold tracking-widest hover:border-[#60A5FA] hover:text-[#60A5FA] hover:scale-105 hover:bg-[#60A5FA]/10 transition-all">
                     {skill}
                   </div>
                 ))}

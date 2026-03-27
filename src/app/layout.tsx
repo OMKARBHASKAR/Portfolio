@@ -32,6 +32,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark scroll-smooth" suppressHydrationWarning>
+      <head>
+        <style>{`
+          * { cursor: none !important; }
+          html, body { cursor: none !important; }
+        `}</style>
+      </head>
       <body
         className={`${inter.variable} ${spaceGrotesk.variable} ${dmSans.variable} antialiased bg-black text-white font-sans`}
         suppressHydrationWarning
