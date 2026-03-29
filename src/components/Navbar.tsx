@@ -24,7 +24,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="fixed top-8 inset-x-8 z-40 pointer-events-none opacity-100 flex justify-between items-start">
+    <nav className="fixed top-4 md:top-8 inset-x-4 md:inset-x-8 z-40 pointer-events-none opacity-100 flex justify-between items-start">
       <div className="pointer-events-auto">
         
         {/* Left-aligned Navbar */}

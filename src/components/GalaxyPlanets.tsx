@@ -1,10 +1,19 @@
 'use client';
 
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { useRef } from 'react';
+import { useRef, useState, useEffect } from 'react';
 
 export default function GalaxyPlanets() {
   const containerRef = useRef<HTMLDivElement>(null);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start start", "end end"]
@@ -44,8 +53,8 @@ export default function GalaxyPlanets() {
           <motion.div
             key={i}
             style={{
-              width: planet.size,
-              height: planet.size,
+              width: isMobile ? planet.size * 0.6 : planet.size,
+              height: isMobile ? planet.size * 0.6 : planet.size,
               top: planet.y,
               left: planet.x,
               y: yOffset,

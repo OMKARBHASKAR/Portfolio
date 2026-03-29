@@ -68,7 +68,7 @@ export default function CustomCursor() {
   if (!mounted) return null;
 
   return (
-    <div className="pointer-events-none fixed inset-0 z-[9999] overflow-hidden">
+    <div className="hidden lg:block pointer-events-none fixed inset-0 z-[9999] overflow-hidden">
       {/* Outer Ring */}
       <motion.div
         className="absolute top-0 left-0 w-8 h-8 rounded-full border border-accent/40"

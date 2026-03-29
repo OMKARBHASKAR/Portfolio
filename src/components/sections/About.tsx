@@ -89,7 +89,7 @@ export default function About() {
               className="w-full flex flex-col items-center"
             >
               {/* Profile Image with Orbit / Ring effect */}
-              <div className="relative w-80 h-80 md:w-96 md:h-96 mb-16 mt-8 lg:mt-0">
+              <div className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 mb-16 mt-8 lg:mt-0">
                 {/* Outermost faint ring */}
                 <div className="absolute inset-[-12%] rounded-full border border-neutral-800/60" />
                 
@@ -141,22 +141,22 @@ export default function About() {
               </div>
 
               {/* Stats Row */}
-              <div className="w-full flex justify-between items-center px-2 py-8 border-y border-neutral-800/80">
-                <div className="text-center">
-                  <div className="text-5xl lg:text-7xl font-black text-white flex items-baseline justify-center">
+              <div className="w-full flex flex-wrap justify-center gap-8 md:justify-between items-center px-2 py-8 border-y border-neutral-800/80">
+                <div className="text-center min-w-[80px]">
+                  <div className="text-4xl sm:text-5xl lg:text-7xl font-black text-white flex items-baseline justify-center">
                     <Counter value={1} />
                   </div>
                   <div className="text-[10px] text-neutral-500 font-bold tracking-widest uppercase mt-3">Year Exp.</div>
                 </div>
-                <div className="text-center">
-                  <div className="text-5xl lg:text-7xl font-black text-white flex items-baseline justify-center">
-                    <Counter value={10} /><span className="text-blue-500 text-3xl lg:text-4xl">+</span>
+                <div className="text-center min-w-[80px]">
+                  <div className="text-4xl sm:text-5xl lg:text-7xl font-black text-white flex items-baseline justify-center">
+                    <Counter value={10} /><span className="text-blue-500 text-2xl sm:text-3xl lg:text-4xl">+</span>
                   </div>
                   <div className="text-[10px] text-neutral-500 font-bold tracking-widest uppercase mt-3">Projects</div>
                 </div>
-                <div className="text-center">
-                  <div className="text-5xl lg:text-7xl font-black text-white flex items-baseline justify-center">
-                    <Counter value={5} /><span className="text-blue-500 text-3xl lg:text-4xl">+</span>
+                <div className="text-center min-w-[80px]">
+                  <div className="text-4xl sm:text-5xl lg:text-7xl font-black text-white flex items-baseline justify-center">
+                    <Counter value={5} /><span className="text-blue-500 text-2xl sm:text-3xl lg:text-4xl">+</span>
                   </div>
                   <div className="text-[10px] text-neutral-500 font-bold tracking-widest uppercase mt-3">Dashboards</div>
                 </div>

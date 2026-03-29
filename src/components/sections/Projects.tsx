@@ -83,11 +83,11 @@ export default function Projects() {
            </h2>
         </div>
 
-        <motion.div style={{ x }} className="flex gap-12 px-[10vw]">
+        <motion.div style={{ x }} className="flex gap-6 md:gap-12 px-[5vw] md:px-[10vw]">
           {projects.map((project, idx) => (
             <motion.div
               key={idx}
-              className="group relative flex-shrink-0 w-[80vw] md:w-[60vw] lg:w-[45vw] h-[60vh] md:h-[70vh] rounded-[3rem] bg-neutral-900 border border-white/5 overflow-hidden shadow-2xl transition-all duration-700"
+              className="group relative flex-shrink-0 w-[85vw] md:w-[60vw] lg:w-[45vw] h-[50vh] md:h-[70vh] rounded-[2rem] md:rounded-[3rem] bg-neutral-900 border border-white/5 overflow-hidden shadow-2xl transition-all duration-700"
             >
               {/* Project Image */}
               <div className="absolute inset-0 z-0 bg-[#05070D]">
@@ -102,11 +102,11 @@ export default function Projects() {
               </div>
 
               {/* Content Overlay */}
-              <div className="absolute inset-0 z-10 p-12 flex flex-col justify-end backdrop-blur-[2px]">
+              <div className="absolute inset-0 z-10 p-8 md:p-12 flex flex-col justify-end backdrop-blur-[2px]">
                 <div className="max-w-xl">
                   {/* Category Badge */}
-                  <div className="mb-6">
-                    <span className="bg-blue-500 text-white px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-[0.2em] shadow-lg shadow-blue-500/20">
+                  <div className="mb-4 md:mb-6">
+                    <span className="bg-blue-500 text-white px-3 py-1 md:px-4 md:py-1.5 rounded-full text-[9px] md:text-[10px] font-black uppercase tracking-[0.2em] shadow-lg shadow-blue-500/20">
                       {project.category}
                     </span>
                   </div>

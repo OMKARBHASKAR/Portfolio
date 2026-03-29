@@ -1,12 +1,21 @@
 'use client';
 
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { useRef, Suspense, lazy } from 'react';
+import { useRef, Suspense, lazy, useState, useEffect } from 'react';
 
 // Lazy load heavy interactive canvas
 const InteractiveStars = lazy(() => import('@/components/InteractiveStars'));
 
 export default function Hero() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
   const containerRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -27,6 +36,7 @@ export default function Hero() {
   const lines = [
     {
       size: "4.2vw",
+      mobileSize: "7.5vw",
       tracking: "tracking-tight md:tracking-normal",
       segments: [
         { text: "GOOD ANALYST", color: "text-white/90" },
@@ -35,6 +45,7 @@ export default function Hero() {
     },
     {
       size: "4.6vw",
+      mobileSize: "8.2vw",
       tracking: "tracking-tighter",
       segments: [
         { text: "GREAT ANALYST", color: "text-white/90" },
@@ -71,13 +82,13 @@ export default function Hero() {
         {lines.map((line, lineIdx) => (
           <div key={lineIdx} className="w-full flex justify-center overflow-visible">
             <div
-              className={`flex items-center justify-center whitespace-nowrap ${line.tracking || ''}`}
+              className={`flex flex-col md:flex-row items-center justify-center whitespace-nowrap ${line.tracking || ''}`}
               style={{ lineHeight: 1.1 }}
             >
               {line.segments.map((segment, segmentIdx) => (
                 <div key={`${lineIdx}-${segmentIdx}`} className="flex items-center">
-                  {/* Space between segments if not the first segment */}
-                  {segmentIdx > 0 && <span style={{ fontSize: line.size, width: '0.3em' }}>&nbsp;</span>}
+                  {/* Space between segments if not the first segment and on desktop or it's a small screen but we want them side-by-side */}
+                  {segmentIdx > 0 && <span className="hidden md:inline" style={{ fontSize: isMobile ? line.mobileSize : line.size, width: '0.3em' }}>&nbsp;</span>}
                   
                   {segment.text.split('').map((char, i) => {
                     const isSpace = char === ' ';
@@ -99,7 +110,7 @@ export default function Hero() {
                             : segment.color
                         }`}
                         style={{
-                          fontSize: line.size,
+                          fontSize: isMobile ? line.mobileSize : line.size,
                           letterSpacing: '-0.05em',
                           fontFamily: 'var(--font-space-grotesk), sans-serif',
                           width: isSpace ? '0.25em' : undefined,

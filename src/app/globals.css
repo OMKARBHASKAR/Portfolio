@@ -9,7 +9,7 @@
   --muted-foreground: #64748B;
   --border: rgba(255, 255, 255, 0.08);
   --accent: #1E90FF;
-  
+
   --font-inter: var(--font-inter);
   --font-space: var(--font-space-grotesk);
 }
@@ -23,7 +23,7 @@
   --color-muted-foreground: var(--muted-foreground);
   --color-border: var(--border);
   --color-accent: var(--accent);
-  
+
   --font-sans: var(--font-inter);
   --font-display: var(--font-space);
   --font-dms: var(--font-dm-sans);
@@ -38,16 +38,29 @@ body {
   zoom: 0.75;
 }
 
-/* Globally hide the default browser cursor */
-html, 
-body,
-*,
-*::before,
-*::after {
-  cursor: none !important;
+/* Adjust zoom for mobile/tablet */
+@media (max-width: 1024px) {
+  body {
+    zoom: 1;
+  }
 }
 
-h1, h2, h3, h4 {
+/* Globally hide the default browser cursor only on devices with hover capability */
+@media (hover: hover) {
+
+  html,
+  body,
+  *,
+  *::before,
+  *::after {
+    cursor: none !important;
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
   font-family: var(--font-display), sans-serif;
 }
 
@@ -63,13 +76,16 @@ h1, h2, h3, h4 {
 ::-webkit-scrollbar {
   width: 4px;
 }
+
 ::-webkit-scrollbar-track {
   background: var(--background);
 }
+
 ::-webkit-scrollbar-thumb {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: var(--accent-blue);
 }
